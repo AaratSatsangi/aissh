@@ -29,11 +29,6 @@
       "id": "education",
       "label": "AI in Education",
       "description": "Learning tools, equitable access, AI literacy, pedagogical AI"
-    },
-    {
-      "id": "other",
-      "label": "Other (please specify in abstract)",
-      "description": ""
     }
   ]
 }

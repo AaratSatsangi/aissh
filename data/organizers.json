@@ -1,48 +1,60 @@
 {
   "contacts": [
     {
+      "name": "Apurva Narayan",
+      "role": "Organizer & Conference Chair",
+      "email": "apurva.narayan@uwo.ca",
+      "photo": "assets/images/organizers/apurva-narayan.jpg",
+      "institution": "University of Western Ontario",
+      "show_in_contact": true,
+      "contact_role": "Chair"
+    },
+    {
       "name": "Umair Rehman",
-      "role": "General Contact",
-      "email": "",
-      "photo": "assets/images/organizers/umair-rehman.jpg",
-      "institution": ""
+      "role": "Conference Chair",
+      "email": "urehman6@uwo.ca",
+      "photo": "assets/images/organizers/umair-rehman.jpeg",
+      "institution": "University of Western Ontario",
+      "show_in_contact": true,
+      "contact_role": "Chair"
     },
     {
       "name": "Atrisha Sarkar",
-      "role": "General Contact",
-      "email": "",
-      "photo": "assets/images/organizers/atrisha-sarkar.jpg",
-      "institution": ""
-    },
-    {
-      "name": "Apurva Narayan",
-      "role": "General Contact",
-      "email": "",
-      "photo": "assets/images/organizers/apurva-narayan.jpg",
-      "institution": ""
+      "role": "Conference Chair",
+      "email": "asarka27@uwo.ca",
+      "photo": "assets/images/organizers/atrisha-sarkar.png",
+      "institution": "University of Western Ontario",
+      "show_in_contact": true,
+      "contact_role": "Chair"
     }
   ],
   "coordinators": [
     {
       "name": "Arsh Chowdhry",
       "role": "Student Poster Coordinator",
-      "email": "",
-      "photo": "assets/images/organizers/arsh-chowdhry.jpg",
-      "institution": ""
+      "email": "achowd85@uwo.ca",
+      "photo": "assets/images/organizers/arsh-chowdhry.jpeg",
+      "institution": "University of Western Ontario",
+      "show_in_contact": true,
+      "contact_role": "Student Posters"
     },
     {
       "name": "Daya Kumar",
       "role": "Logistics and Local Arrangements",
-      "email": "",
-      "photo": "assets/images/organizers/daya-kumar.jpg",
-      "institution": ""
+      "email": "dkumar55@uwo.ca",
+      "photo": "assets/images/organizers/daya-kumar.png",
+      "institution": "University of Western Ontario",
+      "show_in_contact": true,
+      "contact_role": "Logistics"
     },
     {
       "name": "Aarat Satsangi",
       "role": "IT and Web Chair",
-      "email": "",
-      "photo": "assets/images/organizers/aarat-satsangi.jpg",
-      "institution": ""
+      "email": "asatsang@uwo.ca",
+      "photo": "assets/images/organizers/aarat-satsangi.jpeg",
+      "institution": "University of Western Ontario",
+      "show_in_contact": true,
+      "contact_role": "Website & IT"
     }
   ]
 }

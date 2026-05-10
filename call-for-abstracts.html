@@ -72,10 +72,10 @@
 
     <section class="section" aria-label="Call for abstracts and submission form">
       <div class="container">
-        <div class="cfp-layout">
+        <div style="max-width: 800px; margin-inline: auto;">
 
-          <!-- ── Info sidebar ─────────────────────────────── -->
-          <aside aria-label="Submission information">
+          <!-- ── Info section ─────────────────────────────── -->
+          <div aria-label="Submission information">
 
             <div class="cfp-info__section reveal">
               <h2 class="cfp-info__section-title">What We're Looking For</h2>
@@ -90,14 +90,13 @@
               <h2 class="cfp-info__section-title">Submission Guidelines</h2>
               <ul class="cfp-guideline-list">
                 <li class="cfp-guideline-item">PDF format, 1 page max (references on additional pages)</li>
-                <li class="cfp-guideline-item">Standard academic margins and 11pt font</li>
-                <li class="cfp-guideline-item">Include: motivation, approach, results, implications</li>
-                <li class="cfp-guideline-item">Submit via the form — include Google Drive link to PDF</li>
-                <li class="cfp-guideline-item">Original, unpublished work only</li>
+                <li class="cfp-guideline-item">IEEE double column format</li>
+                <li class="cfp-guideline-item">Submit via the embedded form</li>
+                <li class="cfp-guideline-item">Original, unpublished or published work</li>
               </ul>
             </div>
 
-            <div class="cfp-info__section reveal anim-delay-2">
+            <div class="cfp-info__section reveal anim-delay-2" style="margin-bottom: 4rem;">
               <h2 class="cfp-info__section-title">Thematic Areas</h2>
               <div class="cfp-area-list" id="cfp-areas-list">
                 <!-- Injected by form.js reading areas.json -->
@@ -105,195 +104,22 @@
               </div>
             </div>
 
-          </aside>
+          </div>
 
-          <!-- ── Submission form ───────────────────────────── -->
-          <div>
-            <div class="submission-form-wrap reveal">
-
-              <!-- Success banner -->
-              <div id="form-success" class="form-success-banner" role="alert" aria-live="polite">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                <div>
-                  <strong>Your abstract has been received!</strong><br>
-                  We'll review your submission and be in touch before the notification date.
-                </div>
-              </div>
-
-              <!-- Error banner -->
-              <div id="form-error" class="form-error-banner" role="alert" aria-live="polite">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  aria-hidden="true">
-                  <circle cx="12" cy="12" r="10" />
-                  <line x1="12" y1="8" x2="12" y2="12" />
-                  <line x1="12" y1="16" x2="12.01" y2="16" />
-                </svg>
-                <div>There was an issue submitting your form. Please try again or email us directly.</div>
-              </div>
-
-              <!-- Hidden iframe for Google Forms POST -->
-              <iframe id="submission-iframe" name="submission-iframe" title="Form submission target"
-                style="display:none;" aria-hidden="true"></iframe>
-
-              <form id="submission-form" method="POST" action="" target="submission-iframe" novalidate
-                aria-label="Abstract submission form">
-
-                <!-- ① About You -->
-                <div class="form-group-header">
-                  <span class="form-group-number" aria-hidden="true">1</span>
-                  <span class="form-group-title">About You</span>
-                </div>
-
-                <div class="form-field-row">
-                  <div class="form-field">
-                    <label class="form-label" for="field-name">Full Name <span class="required"
-                        aria-hidden="true">*</span></label>
-                    <input class="form-input" type="text" id="field-name" name="entry.NAME" autocomplete="name" required
-                      aria-required="true">
-                  </div>
-                  <div class="form-field">
-                    <label class="form-label" for="field-email">Email Address <span class="required"
-                        aria-hidden="true">*</span></label>
-                    <input class="form-input" type="email" id="field-email" name="entry.EMAIL" autocomplete="email"
-                      required aria-required="true">
-                  </div>
-                </div>
-
-                <div class="form-field-row">
-                  <div class="form-field">
-                    <label class="form-label" for="field-university">University / Institution <span class="required"
-                        aria-hidden="true">*</span></label>
-                    <input class="form-input" type="text" id="field-university" name="entry.UNIVERSITY" required
-                      aria-required="true">
-                  </div>
-                  <div class="form-field">
-                    <label class="form-label" for="field-department">Department / Program</label>
-                    <input class="form-input" type="text" id="field-department" name="entry.DEPARTMENT">
-                  </div>
-                </div>
-
-                <div class="form-field-row">
-                  <div class="form-field">
-                    <label class="form-label" for="field-year">Year of Study <span class="required"
-                        aria-hidden="true">*</span></label>
-                    <div class="form-select-wrap">
-                      <select class="form-select" id="field-year" name="entry.YEAR" required aria-required="true">
-                        <option value="">Select…</option>
-                        <option value="undergrad">Undergraduate</option>
-                        <option value="masters">Master's</option>
-                        <option value="phd">PhD</option>
-                        <option value="postdoc">Postdoctoral</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="form-field">
-                    <label class="form-label" for="field-supervisor">Supervisor Name</label>
-                    <input class="form-input" type="text" id="field-supervisor" name="entry.SUPERVISOR">
-                  </div>
-                </div>
-
-                <!-- ② Your Submission -->
-                <div class="form-group-header">
-                  <span class="form-group-number" aria-hidden="true">2</span>
-                  <span class="form-group-title">Your Submission</span>
-                </div>
-
-                <div class="form-field">
-                  <label class="form-label" for="field-abstract-title">Abstract Title <span class="required"
-                      aria-hidden="true">*</span></label>
-                  <input class="form-input" type="text" id="field-abstract-title" name="entry.ABSTRACT_TITLE" required
-                    aria-required="true">
-                </div>
-
-                <div class="form-field">
-                  <label class="form-label" for="field-author-names">All Author Names</label>
-                  <span class="form-hint">List all authors, comma-separated. Leave blank if single author.</span>
-                  <input class="form-input" type="text" id="field-author-names" name="entry.AUTHORS"
-                    placeholder="e.g. Jane Smith, John Doe">
-                </div>
-
-                <div class="form-field">
-                  <label class="form-label" for="field-area">Thematic Area <span class="required"
-                      aria-hidden="true">*</span></label>
-                  <div class="form-select-wrap">
-                    <select class="form-select" id="field-area" name="entry.AREA" required aria-required="true">
-                      <option value="">Select a thematic area…</option>
-                      <!-- Injected by form.js -->
-                    </select>
-                  </div>
-                </div>
-
-                <div class="form-field">
-                  <label class="form-label" for="field-abstract">Abstract Text <span class="required"
-                      aria-hidden="true">*</span></label>
-                  <span class="form-hint">Paste the body of your abstract (motivation, approach, results, implications).
-                    Max ~2000 characters.</span>
-                  <textarea class="form-textarea" id="field-abstract" name="entry.ABSTRACT" rows="8" required
-                    aria-required="true" aria-describedby="abstract-char-count"></textarea>
-                  <div class="form-char-counter" id="abstract-char-count" aria-live="polite">0 / 2000 characters</div>
-                </div>
-
-                <div class="form-field">
-                  <label class="form-label" for="field-pdf-link">PDF Link</label>
-                  <span class="form-hint">Recommended: share a Google Drive or Dropbox link to your formatted 1-page
-                    PDF.</span>
-                  <input class="form-input" type="url" id="field-pdf-link" name="entry.PDF_LINK"
-                    placeholder="https://drive.google.com/…">
-                </div>
-
-                <!-- ③ Preferences -->
-                <div class="form-group-header">
-                  <span class="form-group-number" aria-hidden="true">3</span>
-                  <span class="form-group-title">Submission Preferences</span>
-                </div>
-
-                <div class="form-field">
-                  <fieldset>
-                    <legend class="form-label">Presentation Preference</legend>
-                    <div class="form-radio-group" role="radiogroup">
-                      <label class="form-radio-item">
-                        <input type="radio" name="entry.PREF" value="talk" id="pref-talk">
-                        <span>Talk</span>
-                      </label>
-                      <label class="form-radio-item">
-                        <input type="radio" name="entry.PREF" value="poster" id="pref-poster">
-                        <span>Poster</span>
-                      </label>
-                      <label class="form-radio-item">
-                        <input type="radio" name="entry.PREF" value="either" id="pref-either" checked>
-                        <span>Either</span>
-                      </label>
-                    </div>
-                  </fieldset>
-                </div>
-
-                <div class="form-field">
-                  <div class="form-checkbox-item">
-                    <input type="checkbox" id="field-consent" name="consent" required aria-required="true">
-                    <label for="field-consent">
-                      I confirm that this submission represents original work, that I am a current student,
-                      and that I consent to my information being used for the purposes of the AISSH 2026 workshop.
-                    </label>
-                  </div>
-                </div>
-
-                <!-- Submit -->
-                <div class="form-submit-wrap">
-                  <button type="submit" class="btn btn-primary form-submit-btn" id="form-submit-btn">
-                    Call for Abstracts
-                  </button>
-                  <p
-                    style="font-size:var(--text-caption); color:var(--color-slate); text-align:center; line-height:1.5;">
-                    By submitting, you agree to our use of your data for workshop administration.
-                  </p>
-                </div>
-
-              </form>
+          <!-- ── Submission Link Card ───────────────────────────── -->
+          <div class="reveal anim-delay-3">
+            <div style="background-color: var(--color-white); padding: 3.5rem 2rem; border-radius: var(--radius-lg); border: 1px solid var(--color-deep-10); text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.03);">
+              <h2 style="font-family: var(--font-display); font-size: 2.25rem; font-weight: 700; color: var(--color-deep); margin-bottom: 1rem;">Ready to Submit?</h2>
+              <p style="color: var(--color-slate); margin-bottom: 2.5rem; line-height: 1.6; font-size: 1.1rem; max-width: 40ch; margin-inline: auto;">
+                Abstract submissions are collected securely via Google Forms. You will be asked to sign in to upload your PDF.
+              </p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSc29Hqjt8fINBQx_fYsAO8hVOtPtOV0X7slFe8G4czQ8H5ktw/viewform?usp=dialog" 
+                 target="_blank" rel="noopener noreferrer" 
+                 class="btn btn-primary" 
+                 style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2.25rem; font-size: 1.1rem; border-radius: var(--radius-full);">
+                Go to Submission Form
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
             </div>
           </div>
 

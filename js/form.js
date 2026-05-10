@@ -3,14 +3,13 @@
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', async () => {
-  const form           = document.getElementById('submission-form');
-  const submitBtn      = document.getElementById('form-submit-btn');
-  const successBanner  = document.getElementById('form-success');
-  const errorBanner    = document.getElementById('form-error');
-  const charCounter    = document.getElementById('abstract-char-count');
-  const abstractField  = document.getElementById('field-abstract');
-  const iframe         = document.getElementById('submission-iframe');
-  if (!form) return;
+  const form = document.getElementById('submission-form');
+  const submitBtn = document.getElementById('form-submit-btn');
+  const successBanner = document.getElementById('form-success');
+  const errorBanner = document.getElementById('form-error');
+  const charCounter = document.getElementById('abstract-char-count');
+  const abstractField = document.getElementById('field-abstract');
+  const iframe = document.getElementById('submission-iframe');
 
   // ── Load thematic areas into select + sidebar ─────────────
   const areasData = await AISSH.loadData('data/areas.json');
@@ -33,11 +32,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         <div class="cfp-area-item">
           <span class="cfp-area-item__label">${a.label}</span>
           ${a.description ? `<span class="cfp-area-item__desc">${a.description}</span>` : ''}
-        </div>`).join('') +
-      `<div class="cfp-area-item" style="opacity:0.6;">
-        <span class="cfp-area-item__label">Other (please specify in abstract)</span>
-       </div>`;
+        </div>`).join('');
   }
+
+  if (!form) return;
 
   // ── Load Google Form action URL ────────────────────────────
   const confData = await AISSH.loadData('data/conference.json');
@@ -85,12 +83,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const required = [
       { id: 'field-abstract-title', label: 'Abstract title' },
-      { id: 'field-name',           label: 'Full name' },
-      { id: 'field-email',          label: 'Email address' },
-      { id: 'field-university',     label: 'University' },
-      { id: 'field-year',           label: 'Year of study' },
-      { id: 'field-area',           label: 'Thematic area' },
-      { id: 'field-abstract',       label: 'Abstract text' },
+      { id: 'field-name', label: 'Full name' },
+      { id: 'field-email', label: 'Email address' },
+      { id: 'field-university', label: 'University' },
+      { id: 'field-year', label: 'Year of study' },
+      { id: 'field-area', label: 'Thematic area' },
+      { id: 'field-abstract', label: 'Abstract text' },
     ];
 
     required.forEach(({ id, label }) => {
