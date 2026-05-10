@@ -1,0 +1,48 @@
+{
+  "contacts": [
+    {
+      "name": "Umair Rehman",
+      "role": "General Contact",
+      "email": "",
+      "photo": "assets/images/organizers/umair-rehman.jpg",
+      "institution": ""
+    },
+    {
+      "name": "Atrisha Sarkar",
+      "role": "General Contact",
+      "email": "",
+      "photo": "assets/images/organizers/atrisha-sarkar.jpg",
+      "institution": ""
+    },
+    {
+      "name": "Apurva Narayan",
+      "role": "General Contact",
+      "email": "",
+      "photo": "assets/images/organizers/apurva-narayan.jpg",
+      "institution": ""
+    }
+  ],
+  "coordinators": [
+    {
+      "name": "Arsh Chowdhry",
+      "role": "Student Poster Coordinator",
+      "email": "",
+      "photo": "assets/images/organizers/arsh-chowdhry.jpg",
+      "institution": ""
+    },
+    {
+      "name": "Daya Kumar",
+      "role": "Logistics and Local Arrangements",
+      "email": "",
+      "photo": "assets/images/organizers/daya-kumar.jpg",
+      "institution": ""
+    },
+    {
+      "name": "Aarat Satsangi",
+      "role": "IT and Web Chair",
+      "email": "",
+      "photo": "assets/images/organizers/aarat-satsangi.jpg",
+      "institution": ""
+    }
+  ]
+}

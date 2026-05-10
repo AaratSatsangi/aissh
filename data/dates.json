@@ -1,0 +1,29 @@
+{
+  "dates": [
+    {
+      "label": "Abstract Submission Deadline",
+      "date": null,
+      "category": "submission",
+      "highlight": true
+    },
+    {
+      "label": "Notification of Acceptance",
+      "date": null,
+      "category": "submission",
+      "highlight": false
+    },
+    {
+      "label": "Camera-Ready Deadline",
+      "date": null,
+      "category": "submission",
+      "highlight": false
+    },
+    {
+      "label": "Conference Day",
+      "date": "2026-06-02",
+      "category": "conference",
+      "highlight": true
+    }
+  ]
+}
+

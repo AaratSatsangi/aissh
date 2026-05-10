@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Call for Abstracts — submit your extended abstract to AISSH 2025. Open to students across disciplines working on AI safety, sustainability, and humanity.">
+  <title>Call for Abstracts | AISSH 2025</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body class="page-cfp">
+
+  <header class="site-header" role="banner">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-header__logos" aria-label="AISSH 2025 — Home">
+        <img src="assets/logos/uwo-logo-rev.png" alt="University of Western Ontario" class="site-header__logo-img">
+        <span class="site-header__logo-sep" aria-hidden="true">×</span>
+        <img src="assets/logos/waterloo-logo-rev.png" alt="University of Waterloo" class="site-header__logo-img">
+      </a>
+      <span class="site-header__wordmark" aria-hidden="true">AISSH 2025</span>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" class="site-nav__link" data-nav-link>Home</a>
+        <a href="speakers.html" class="site-nav__link" data-nav-link>Speakers</a>
+        <a href="schedule.html" class="site-nav__link" data-nav-link>Schedule</a>
+        <a href="organizers.html" class="site-nav__link" data-nav-link>Organizers</a>
+        <a href="contact.html" class="site-nav__link" data-nav-link>Contact</a>
+        <a href="call-for-abstracts.html" class="site-nav__link site-nav__cta" data-nav-link>Call for Abstracts</a>
+      </nav>
+      <button class="site-header__hamburger" aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav id="mobile-nav" class="site-nav__mobile" aria-label="Mobile navigation">
+    <a href="index.html" class="site-nav__mobile-link" data-nav-link>Home</a>
+    <a href="speakers.html" class="site-nav__mobile-link" data-nav-link>Speakers</a>
+    <a href="schedule.html" class="site-nav__mobile-link" data-nav-link>Schedule</a>
+    <a href="organizers.html" class="site-nav__mobile-link" data-nav-link>Organizers</a>
+    <a href="contact.html" class="site-nav__mobile-link" data-nav-link>Contact</a>
+    <a href="call-for-abstracts.html" class="site-nav__mobile-cta">Call for Abstracts</a>
+  </nav>
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+      <canvas id="tree-canvas" class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="container">
+        <span class="page-hero__label">AISSH 2025</span>
+        <h1 class="page-hero__title">Call for Abstracts</h1>
+        <p class="page-hero__subtitle">We welcome extended abstracts from students across disciplines working on
+          responsible, aligned AI.</p>
+      </div>
+    </div>
+
+    <section class="section" aria-label="Call for abstracts and submission form">
+      <div class="container">
+        <div class="cfp-layout">
+
+          <!-- ── Info sidebar ─────────────────────────────── -->
+          <aside aria-label="Submission information">
+
+            <div class="cfp-info__section reveal">
+              <h2 class="cfp-info__section-title">What We're Looking For</h2>
+              <p style="font-size:var(--text-small); color:var(--color-slate); line-height:1.7;">
+                Extended abstracts of <strong>1 page maximum</strong> (excluding references), from
+                <strong>student authors</strong> at any level. Selected authors may be invited to
+                contribute to a book chapter or give a short talk at the workshop.
+              </p>
+            </div>
+
+            <div class="cfp-info__section reveal anim-delay-1">
+              <h2 class="cfp-info__section-title">Submission Guidelines</h2>
+              <ul class="cfp-guideline-list">
+                <li class="cfp-guideline-item">PDF format, 1 page max (references on additional pages)</li>
+                <li class="cfp-guideline-item">Standard academic margins and 11pt font</li>
+                <li class="cfp-guideline-item">Include: motivation, approach, results, implications</li>
+                <li class="cfp-guideline-item">Submit via the form — include Google Drive link to PDF</li>
+                <li class="cfp-guideline-item">Original, unpublished work only</li>
+              </ul>
+            </div>
+
+            <div class="cfp-info__section reveal anim-delay-2">
+              <h2 class="cfp-info__section-title">Thematic Areas</h2>
+              <div class="cfp-area-list" id="cfp-areas-list">
+                <!-- Injected by form.js reading areas.json -->
+                <p style="font-size:var(--text-small); color:var(--color-slate);">Loading…</p>
+              </div>
+            </div>
+
+          </aside>
+
+          <!-- ── Submission form ───────────────────────────── -->
+          <div>
+            <div class="submission-form-wrap reveal">
+
+              <!-- Success banner -->
+              <div id="form-success" class="form-success-banner" role="alert" aria-live="polite">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <div>
+                  <strong>Your abstract has been received!</strong><br>
+                  We'll review your submission and be in touch before the notification date.
+                </div>
+              </div>
+
+              <!-- Error banner -->
+              <div id="form-error" class="form-error-banner" role="alert" aria-live="polite">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" y1="8" x2="12" y2="12" />
+                  <line x1="12" y1="16" x2="12.01" y2="16" />
+                </svg>
+                <div>There was an issue submitting your form. Please try again or email us directly.</div>
+              </div>
+
+              <!-- Hidden iframe for Google Forms POST -->
+              <iframe id="submission-iframe" name="submission-iframe" title="Form submission target"
+                style="display:none;" aria-hidden="true"></iframe>
+
+              <form id="submission-form" method="POST" action="" target="submission-iframe" novalidate
+                aria-label="Abstract submission form">
+
+                <!-- ① About You -->
+                <div class="form-group-header">
+                  <span class="form-group-number" aria-hidden="true">1</span>
+                  <span class="form-group-title">About You</span>
+                </div>
+
+                <div class="form-field-row">
+                  <div class="form-field">
+                    <label class="form-label" for="field-name">Full Name <span class="required"
+                        aria-hidden="true">*</span></label>
+                    <input class="form-input" type="text" id="field-name" name="entry.NAME" autocomplete="name" required
+                      aria-required="true">
+                  </div>
+                  <div class="form-field">
+                    <label class="form-label" for="field-email">Email Address <span class="required"
+                        aria-hidden="true">*</span></label>
+                    <input class="form-input" type="email" id="field-email" name="entry.EMAIL" autocomplete="email"
+                      required aria-required="true">
+                  </div>
+                </div>
+
+                <div class="form-field-row">
+                  <div class="form-field">
+                    <label class="form-label" for="field-university">University / Institution <span class="required"
+                        aria-hidden="true">*</span></label>
+                    <input class="form-input" type="text" id="field-university" name="entry.UNIVERSITY" required
+                      aria-required="true">
+                  </div>
+                  <div class="form-field">
+                    <label class="form-label" for="field-department">Department / Program</label>
+                    <input class="form-input" type="text" id="field-department" name="entry.DEPARTMENT">
+                  </div>
+                </div>
+
+                <div class="form-field-row">
+                  <div class="form-field">
+                    <label class="form-label" for="field-year">Year of Study <span class="required"
+                        aria-hidden="true">*</span></label>
+                    <div class="form-select-wrap">
+                      <select class="form-select" id="field-year" name="entry.YEAR" required aria-required="true">
+                        <option value="">Select…</option>
+                        <option value="undergrad">Undergraduate</option>
+                        <option value="masters">Master's</option>
+                        <option value="phd">PhD</option>
+                        <option value="postdoc">Postdoctoral</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-field">
+                    <label class="form-label" for="field-supervisor">Supervisor Name</label>
+                    <input class="form-input" type="text" id="field-supervisor" name="entry.SUPERVISOR">
+                  </div>
+                </div>
+
+                <!-- ② Your Submission -->
+                <div class="form-group-header">
+                  <span class="form-group-number" aria-hidden="true">2</span>
+                  <span class="form-group-title">Your Submission</span>
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="field-abstract-title">Abstract Title <span class="required"
+                      aria-hidden="true">*</span></label>
+                  <input class="form-input" type="text" id="field-abstract-title" name="entry.ABSTRACT_TITLE" required
+                    aria-required="true">
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="field-author-names">All Author Names</label>
+                  <span class="form-hint">List all authors, comma-separated. Leave blank if single author.</span>
+                  <input class="form-input" type="text" id="field-author-names" name="entry.AUTHORS"
+                    placeholder="e.g. Jane Smith, John Doe">
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="field-area">Thematic Area <span class="required"
+                      aria-hidden="true">*</span></label>
+                  <div class="form-select-wrap">
+                    <select class="form-select" id="field-area" name="entry.AREA" required aria-required="true">
+                      <option value="">Select a thematic area…</option>
+                      <!-- Injected by form.js -->
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="field-abstract">Abstract Text <span class="required"
+                      aria-hidden="true">*</span></label>
+                  <span class="form-hint">Paste the body of your abstract (motivation, approach, results, implications).
+                    Max ~2000 characters.</span>
+                  <textarea class="form-textarea" id="field-abstract" name="entry.ABSTRACT" rows="8" required
+                    aria-required="true" aria-describedby="abstract-char-count"></textarea>
+                  <div class="form-char-counter" id="abstract-char-count" aria-live="polite">0 / 2000 characters</div>
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="field-pdf-link">PDF Link</label>
+                  <span class="form-hint">Recommended: share a Google Drive or Dropbox link to your formatted 1-page
+                    PDF.</span>
+                  <input class="form-input" type="url" id="field-pdf-link" name="entry.PDF_LINK"
+                    placeholder="https://drive.google.com/…">
+                </div>
+
+                <!-- ③ Preferences -->
+                <div class="form-group-header">
+                  <span class="form-group-number" aria-hidden="true">3</span>
+                  <span class="form-group-title">Submission Preferences</span>
+                </div>
+
+                <div class="form-field">
+                  <fieldset>
+                    <legend class="form-label">Presentation Preference</legend>
+                    <div class="form-radio-group" role="radiogroup">
+                      <label class="form-radio-item">
+                        <input type="radio" name="entry.PREF" value="talk" id="pref-talk">
+                        <span>Talk</span>
+                      </label>
+                      <label class="form-radio-item">
+                        <input type="radio" name="entry.PREF" value="poster" id="pref-poster">
+                        <span>Poster</span>
+                      </label>
+                      <label class="form-radio-item">
+                        <input type="radio" name="entry.PREF" value="either" id="pref-either" checked>
+                        <span>Either</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="form-field">
+                  <div class="form-checkbox-item">
+                    <input type="checkbox" id="field-consent" name="consent" required aria-required="true">
+                    <label for="field-consent">
+                      I confirm that this submission represents original work, that I am a current student,
+                      and that I consent to my information being used for the purposes of the AISSH 2025 workshop.
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Submit -->
+                <div class="form-submit-wrap">
+                  <button type="submit" class="btn btn-primary form-submit-btn" id="form-submit-btn">
+                    Call for Abstracts
+                  </button>
+                  <p
+                    style="font-size:var(--text-caption); color:var(--color-slate); text-align:center; line-height:1.5;">
+                    By submitting, you agree to our use of your data for workshop administration.
+                  </p>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="site-footer__body">
+        <div class="site-footer__identity">
+          <p class="site-footer__conf-name">AISSH 2025</p>
+          <p class="site-footer__tagline">Aligning AI for Safety, Sustainability, and Humanity</p>
+        </div>
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+          <p class="site-footer__nav-heading">Quick Links</p>
+          <ul class="site-footer__nav-list">
+            <li><a href="index.html" class="site-footer__nav-link">Home</a></li>
+            <li><a href="speakers.html" class="site-footer__nav-link">Speakers</a></li>
+            <li><a href="schedule.html" class="site-footer__nav-link">Schedule</a></li>
+            <li><a href="call-for-abstracts.html" class="site-footer__nav-link">Call for Abstracts</a></li>
+            <li><a href="organizers.html" class="site-footer__nav-link">Organizers</a></li>
+            <li><a href="contact.html" class="site-footer__nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="site-footer__universities">
+          <div class="site-footer__uni-strip">
+            <img src="assets/logos/uwo-logo-rev.png" alt="University of Western Ontario" class="site-footer__uni-logo">
+            <span class="site-footer__uni-sep" aria-hidden="true">×</span>
+            <img src="assets/logos/waterloo-logo-rev.png" alt="University of Waterloo" class="site-footer__uni-logo">
+          </div>
+          <p class="site-footer__uni-label">A joint workshop by UWO &amp; Waterloo</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright">© <span class="footer-year">2025</span> AISSH. All rights reserved.</p>
+        <p class="site-footer__credit">IT Chair: Aarat Satsangi</p>
+      </div>
+    </div>
+    <div class="site-footer__uni-bar" aria-hidden="true"></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/tree.js"></script>
+</body>
+
+</html>

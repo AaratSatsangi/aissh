@@ -1,0 +1,54 @@
+{
+  "speakers": [
+    {
+      "id": "catherine-burns",
+      "name": "Prof. Catherine Burns",
+      "affiliation": "Affiliation to be announced",
+      "title": "Professor",
+      "bio": "Bio to be announced.",
+      "talk_title": "Talk title to be announced",
+      "photo": "assets/images/speakers/catherine-burns.jpg",
+      "status": "confirmed"
+    },
+    {
+      "id": "joshua-pearce",
+      "name": "Prof. Joshua Pearce",
+      "affiliation": "Affiliation to be announced",
+      "title": "Professor",
+      "bio": "Bio to be announced.",
+      "talk_title": "Talk title to be announced",
+      "photo": "assets/images/speakers/joshua-pearce.jpg",
+      "status": "confirmed"
+    },
+    {
+      "id": "kerstin-dautenhahn",
+      "name": "Kerstin Dautenhahn",
+      "affiliation": "Affiliation to be announced",
+      "title": "Professor",
+      "bio": "Bio to be announced.",
+      "talk_title": "Talk title to be announced",
+      "photo": "assets/images/speakers/kerstin-dautenhahn.jpg",
+      "status": "confirmed"
+    },
+    {
+      "id": "marscha-chechik",
+      "name": "Marscha Chechik",
+      "affiliation": "Affiliation to be announced",
+      "title": "Professor",
+      "bio": "Bio to be announced.",
+      "talk_title": "Talk title to be announced",
+      "photo": "assets/images/speakers/marscha-chechik.jpg",
+      "status": "confirmed"
+    },
+    {
+      "id": "alice-huang",
+      "name": "Alice Huang",
+      "affiliation": "Affiliation to be announced",
+      "title": "Researcher",
+      "bio": "Bio to be announced.",
+      "talk_title": "Talk title to be announced",
+      "photo": "assets/images/speakers/alice-huang.jpg",
+      "status": "confirmed"
+    }
+  ]
+}
